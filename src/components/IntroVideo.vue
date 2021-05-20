@@ -28,7 +28,7 @@
 			muted>
 			<source :src="videoWebm" type="video/webm">
 			<source :src="videoMp4" type="video/mp4">
-			{{ t('firstrunwizard', 'Welcome to Nextcloud!') }}
+			{{ t('firstrunwizard', 'Welcome to the dotplex Cloud!') }}
 		</video>
 	</div>
 </template>
@@ -40,8 +40,8 @@ export default {
 	name: 'IntroVideo',
 	data() {
 		return {
-			videoMp4: generateFilePath('firstrunwizard', 'img', 'Nextcloud.mp4'),
-			videoWebm: generateFilePath('firstrunwizard', 'img', 'Nextcloud.webm'),
+			videoMp4: generateFilePath('firstrunwizard', 'img', 'dotplex.mp4'),
+			videoWebm: generateFilePath('firstrunwizard', 'img', 'dotplex.webm'),
 		}
 	},
 }
