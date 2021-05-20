@@ -1,8 +1,8 @@
 <?php
 /**
- * @copyright Copyright (c) 2018 Julius Härtl <jus@bitgrid.net>
+ * @copyright Copyright (c) 2021 Johannes Brückner <johannes@dotplex.com>
  *
- * @author Julius Härtl <jus@bitgrid.net>
+ * @author Johannes Brückner <johannes@dotplex.com>
  *
  * @license GNU AGPL version 3 or any later version
  *
@@ -30,26 +30,26 @@
 
 <div class="page" data-title="<?php p($l->t('Stay in sync')); ?>" data-subtitle="">
 	<div class="content content-clients">
-		<p><?php p($l->t('Nextcloud gives you access to your files wherever you are.')); ?><br />
-			<?php p($l->t('Our easy to use desktop and mobile clients are available for all major platforms at zero cost!')); ?></p>
-		<div class="description-block">
-			<h3><?php p($l->t('Get the apps to sync your files')); ?></h3>
+		<h2><?php p($l->t('Die dotplex Cloud erlaubt Zugriff auf Ihre Daten,  wo auch immer Sie sind.')); ?></h2>
+		<div class="description-block app-buttons">
+			<p><?php p($l->t('Apps zum Verbinden Ihrer mobilen Geräte und Ihres Laptops finden Sie hier')); ?></p>
 			<a target="_blank" href="<?php p($_['desktop']); ?>" rel="noreferrer noopener">
 				<img src="<?php p(image_path('core', 'desktopapp.svg')); ?>"
-					 alt="<?php p($l->t('Desktop client')); ?>"/>
+					 alt="<?php p($l->t('Desktop client')); ?>"
+					 style="height:50px"/>
 			</a>
 			<a target="_blank" href="<?php p($_['android']); ?>" rel="noreferrer noopener">
 				<img src="<?php p(image_path('core', 'googleplay.svg')); ?>"
 					 alt="<?php p($l->t('Android app')); ?>"
-					 style="height:60px"/>
+					 style="height:50px"/>
 			</a>
 			<a target="_blank" href="<?php p($_['ios']); ?>" rel="noreferrer noopener">
 				<img src="<?php p(image_path('core', 'appstore.svg')); ?>"
-					 alt="<?php p($l->t('iOS app')); ?>" style="height:60px"/>
+					 alt="<?php p($l->t('iOS app')); ?>" style="height:50px"/>
 			</a>
 		</div>
 		<div class="description-block">
-			<h3><?php p($l->t('Connect your desktop apps to %s', array($theme->getName()))); ?></h3>
+			<p><?php p($l->t('Verbinden Sie auch andere Desktop-Anwendungen mit der dotplex Cloud')); ?></p>
 			<a target="_blank" class="button"
 			   href="<?php p(link_to_docs('user-sync-calendars')) ?>" rel="noreferrer noopener">
 				<span class="icon icon-calendar-dark"></span>
