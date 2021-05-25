@@ -46,7 +46,7 @@ export default {
 	},
 	computed: {
 		videoFallbackText() {
-			return t('firstrunwizard', 'Welcome to {cloudName}!', { cloudName: window.OC.theme.name })
+			return t('firstrunwizard', 'Welcome to your {cloudName} account!', { cloudName: window.OC.theme.name })
 		},
 	},
 }

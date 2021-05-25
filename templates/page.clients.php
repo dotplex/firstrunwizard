@@ -30,9 +30,9 @@
 
 <div class="page" data-title="<?php p($l->t('Stay in sync')); ?>" data-subtitle="">
 	<div class="content content-clients">
-		<h2><?php p($l->t('Die dotplex Cloud erlaubt Zugriff auf Ihre Daten,  wo auch immer Sie sind.')); ?></h2>
+		<h2><?php p($l->t('dotplex Cloud allows access to your data wherever you are.')); ?></h2>
 		<div class="description-block app-buttons">
-			<p><?php p($l->t('Apps zum Verbinden Ihrer mobilen Geräte und Ihres Laptops finden Sie hier')); ?></p>
+			<p><?php p($l->t('Apps to connect your mobile devices and your PC or Mac are available here:')); ?></p>
 			<a target="_blank" href="<?php p($_['desktop']); ?>" rel="noreferrer noopener">
 				<img src="<?php p(image_path('core', 'desktopapp.svg')); ?>"
 					 alt="<?php p($l->t('Desktop client')); ?>"
@@ -49,7 +49,7 @@
 			</a>
 		</div>
 		<div class="description-block">
-			<p><?php p($l->t('Verbinden Sie auch andere Desktop-Anwendungen mit der dotplex Cloud')); ?></p>
+			<p><?php p($l->t('Connect other desktop apps to dotplex Cloud:')); ?></p>
 			<a target="_blank" class="button"
 			   href="<?php p(link_to_docs('user-sync-calendars')) ?>" rel="noreferrer noopener">
 				<span class="icon icon-calendar-dark"></span>

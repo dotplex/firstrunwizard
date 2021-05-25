@@ -171,6 +171,18 @@
 				font-size: 14px;
 			}
 		}
+		.content-migration {
+			text-align: center;
+
+			.description-block {
+				max-width: 480px;
+				margin: 0 auto;
+
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
 		.content-final {
 			h3 {
 				background-position: 0;
@@ -235,6 +247,10 @@
 				margin: 0 auto 10px;
 				width: 70px;
 				height: auto;
+			}
+			p {
+				max-width: 350px;
+				margin: 0 auto 20px;
 			}
 		}
 	}
