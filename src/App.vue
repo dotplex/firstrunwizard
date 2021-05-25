@@ -75,7 +75,7 @@
 		</div>
 		<div class="modal-footer">
 			<button v-if="isLast" class="primary modal-default-button" @click="close">
-				{{ t('firstrunwizard', 'Weiter zur dotplex Cloud') }}
+				{{ startButtonText }}
 			</button>
 		</div>
 	</Modal>
@@ -424,6 +424,9 @@ export default {
 		},
 		isFirst() {
 			return this.currentSlide === 0
+		},
+		startButtonText() {
+			return t('firstrunwizard', 'Start using {cloudName}', { cloudName: window.OC.theme.name })
 		},
 	},
 	async created() {

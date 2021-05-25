@@ -8,9 +8,7 @@ OC.L10N.register(
     "Press Ctrl-C to copy." : "إضغط Ctrl-C للنسخ.",
     "First run wizard" : "دليل التشغيل لأول مرة",
     "About" : "عن",
-    "Start using Nextcloud" : "اشرع في استخدام ناكست كلاود",
     "Communication with Nextcloud Talk" : "التواصل مع Nextcloud Talk",
-    "Browse the app store" : "استكشف متجر التطبيقات",
     "Get the apps to sync your files" : "احصل على التطبيقات لمزامنة ملفاتك",
     "Desktop client" : "تطبيق سطح المكتب",
     "Android app" : "تطبيق أندرويد",
@@ -36,6 +34,8 @@ OC.L10N.register(
     "Server address" : "عنوان الخادم",
     "Copy link" : "انسخ الرابط",
     "Add your profile information! For example your email is needed to reset your password." : "قم بإضافة معلومات في ملفك التعريفي كعنوان البريد الإلكتروني على سبيل المثال لتتمكن من إعادة تعيين كلمتك السرية.",
+    "Start using Nextcloud" : "اشرع في استخدام ناكست كلاود",
+    "Browse the app store" : "استكشف متجر التطبيقات",
     "Previous" : "السابق",
     "Next" : "التالي"
 },
