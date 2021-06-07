@@ -18,7 +18,7 @@ The First run wizard can be customized to meet specific design goals, or to chan
 	<category>tools</category>
 	<default_enable/>
 	<dependencies>
-		<nextcloud min-version="22" max-version="22" />
+		<nextcloud min-version="20" max-version="22" />
 	</dependencies>
 	<navigations>
 		<navigation>
