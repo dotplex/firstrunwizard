@@ -205,11 +205,31 @@
 		}
 
 		// primary on next button
-		.modal-wrapper .icon-next {
-			background-color: var(--color-primary);
-			color: var(--color-primary-text);
-			box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
-			left: 22px;
+		.modal-wrapper {
+			.icon-next,
+			.icon-previous {
+				width: 60px;
+				height: 60px;
+				padding: 19px 17px;
+				border-radius: 30px;
+				font-size: 29px;
+			}
+			a.next {
+				.icon-next {
+					background-color: #00cc94;
+					color: var(--color-primary-text);
+					box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+					left: 22px;
+					transition: all 150ms ease-out;
+					transform: translateX(0);
+				}
+				&:hover {
+					.icon-next {
+						transform: translateX(2px);
+						background-color: #00dfa3;
+					}
+				}
+			}
 		}
 	}
 
@@ -451,6 +471,13 @@ export default {
 	},
 	beforeDestroy() {
 		window.removeEventListener('resize', this.onResize)
+	},
+	mounted() {
+		setTimeout(() => {
+			if (this.isFirst) {
+				this.next()
+			}
+		}, 4000)
 	},
 	methods: {
 		async loadStaticSlides() {
